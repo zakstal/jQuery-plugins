@@ -1,4 +1,4 @@
-body, h1, p, section, ul, li, a {
+body, main, figure, h1, ul, li, img, a {
   margin: 0;
   padding: 0;
   border: 0;
@@ -11,6 +11,12 @@ body, h1, p, section, ul, li, a {
 
 ul {
   list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .group:after {
@@ -32,6 +38,65 @@ h1 {
   text-align: center;
 }
 
+.thumbnails {
+  width: 420px;
+  margin: 0 auto;
+}
+
+.active {
+  width: 100%;
+  border: 10px solid black;
+  margin-bottom: 10px;
+}
+
+.gutter {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+}
+
+.gutter-images > li {
+  float: left;
+  width: 62px;
+  margin: 0 5px;
+  border: 5px solid black;
+}
+
+.gutter-images > li:hover {
+  border-color: red;
+}
+
+.gutter-images > li.selected {
+  border-color: purple;
+}
+
+.gutter-left, .gutter-right {
+  position: absolute;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  border: 4px solid blue;
+  color: blue;
+  top: 50%;
+  margin-top: -19px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 20px;
+}
+
+.gutter-left:hover, .gutter-right:hover {
+  color: red;
+  border-color: red;
+}
+
+.gutter-left {
+  left: -40px;
+}
+
+.gutter-right {
+  right: -40px;
+}
 
 
 

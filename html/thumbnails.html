@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="../css/thumbnails.css" type="text/css">
 
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-     <script src="../js/carousel.js"></script>
+     <script src="../js/thumbnails.js"></script>
 
   </head>
 
   <body>
 
     <h1>Thumbnails</h1>
+    <main class="thumbnails">
+      <figure class="active"></figure>
 
-      <figure class="carousel">
-        <ul class="items">
-          <li class="active"><img src="../assets/cat1.jpeg" alt="Cat"></li>
-          <li><img src="../assets/cat5.jpeg" alt="Cat"></li>
-          <li><img src="../assets/cat8.jpeg" alt="Cat"></li>
-          <li><img src="../assets/cat12.jpeg" alt="Cat"></li>
-          <li><img src="../assets/cat14.jpeg" alt="Cat"></li>
-          <li><img src="../assets/cat15.jpeg" alt="Cat"></li>
+      <nav class="gutter">
+        <a href="javascript:void(0)" class="gutter-left">←</a>
+        <a href="javascript:void(0)" class="gutter-right">→</a>
+
+        <ul class="gutter-images group">
+          <li><img src="../assets/pokemon1.png"></li>
+          <li><img src="../assets/pokemon2.png"></li>
+          <li><img src="../assets/pokemon3.png"></li>
+          <li><img src="../assets/pokemon4.png"></li>
+          <li><img src="../assets/pokemon5.png"></li>
+          <li><img src="../assets/pokemon6.png"></li>
+          <li><img src="../assets/pokemon7.png"></li>
+          <li><img src="../assets/pokemon8.png"></li>
+          <li><img src="../assets/pokemon9.png"></li>
+          <li><img src="../assets/pokemon10.png"></li>
+          <li><img src="../assets/pokemon11.png"></li>
+          <li><img src="../assets/pokemon12.png"></li>
+          <li><img src="../assets/pokemon13.png"></li>
+          <li><img src="../assets/pokemon14.png"></li>
+          <li><img src="../assets/pokemon15.png"></li>
+          <li><img src="../assets/pokemon16.png"></li>
+          <li><img src="../assets/pokemon17.png"></li>
+          <li><img src="../assets/pokemon18.png"></li>
+          <li><img src="../assets/pokemon19.png"></li>
         </ul>
-
-        <a href="javascript:void(0)" class="slide-left">←</a>
-        <a href="javascript:void(0)" class="slide-right">→</a>
-      </figure>
+      </nav>
+    </main>
 
     <script>
       $(function() {
