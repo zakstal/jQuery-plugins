@@ -3,8 +3,6 @@ $.Tabs = function (el) {
   this.$el.on('click', 'a', clickTab.bind(this))
   this.$contentTabs = $(this.$el.attr("data-content-tabs"))
   this.$activeTab = this.$el.find(".active");
-
-
 };
 
 $.fn.tabs = function () {
