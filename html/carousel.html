@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kitten Carousel!</title>
+
+    <link rel="stylesheet" href="../css/carousel.css" type="text/css">
+
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="../js/carousel.js"></script>
+
+  </head>
+
+  <body>
+
+    <h1>Carousel</h1>
+
+      <section class="carousel">
+        <section class="items">
+          ...
+        </section>
+
+        <a href="javascript:void(0)" class="slide-right">Prev</a>
+        <a href="javascript:void(0)" class="slide-left">Next</a>
+      </section>
+
+    <script>
+      $(function() {
+        $('.carousel').carousel();
+      })
+    </script>
+  </body>
+</html>

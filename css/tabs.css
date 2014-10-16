@@ -1,0 +1,93 @@
+body, h1, p, section, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+body {
+  font-family: sans-serif;
+  background: #ccc;
+  height: 100%;
+
+}
+
+main {
+  width: 500px;
+  margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+
+li {
+  float: left;
+}
+
+li > a {
+  display: block;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+li > a.active {
+  background: white;
+  border-radius: 10px 10px 0 0;
+
+}
+
+li > a:hover {
+  color: blue;
+}
+.content-tabs {
+  position: relative;
+  width: 100%;
+  background: white;
+}
+
+.tab-pane {
+  display: block;
+  opacity: 0;
+  background: white;
+  padding: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: opacity 500ms;
+}
+
+.tab-pane.active {
+  display: block;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+
+.tab-pane.transitioning {
+  display: block;
+  opacity: 0;
+}
+
+
